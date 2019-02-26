@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Hello World!</h1>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Download
+          </button>
+          <button id="stop" class="btn btn-primary">
+            Stop
+          </button>
+          <button id="start" class="btn btn-primary">
+            Start
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="form-row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="urlInput">URL</label>
+                    <input type="text" class="form-control" id="urlInput" aria-describedby="urlHelp" placeholder="URL">
+                    <small id="urlHelp" class="form-text text-muted">Put the URL to download here.</small>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="locationInput">Location</label>
+                    <input type="file" class="form-control-file" id="locationInput" aria-describedby="locationHelp" webkitdirectory>
+                    <small id="locationHelp" class="form-text text-muted">Choose the location to download.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src='load-bundle.js'></script>
+  </body>
+</html>
